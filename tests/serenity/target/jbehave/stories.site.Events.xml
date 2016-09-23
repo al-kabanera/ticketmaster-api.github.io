@@ -1,0 +1,29 @@
+<story path="stories/site/Events.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Events Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/events/) Verification for general page&apos;s elements">
+<step outcome="successful">Given open Events page</step>
+<step outcome="failed" keyword="FAILED">Then check general page elements for Events Page, where DISQUS = <parameter>false</parameter> and LeftMenu = <parameter>true</parameter><failure>org.junit.ComparisonFailure: expected:&lt;...er API Devjam in San[ta Monica], CA!&gt; but was:&lt;...er API Devjam in San[ Jose], CA!&gt;</failure></step>
+<failure>org.junit.ComparisonFailure: expected:&lt;...er API Devjam in San[ta Monica], CA!&gt; but was:&lt;...er API Devjam in San[ Jose], CA!&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at bla.tm.steps.EventsSteps.checkIfTitleIsCorrect(EventsSteps.java:29)
+	at bla.tm.steps.EventsSteps$$EnhancerByCGLIB$$436b188e.CGLIB$checkIfTitleIsCorrect$3(&lt;generated&gt;)
+	at bla.tm.steps.EventsSteps$$EnhancerByCGLIB$$436b188e$$FastClassByCGLIB$$f7096bc.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.EventsSteps$$EnhancerByCGLIB$$436b188e.checkIfTitleIsCorrect(&lt;generated&gt;)
+	at bla.tm.definitions.site.EventsDefinition.checkGeneralPageElements(EventsDefinition.java:21)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</failure>
+</scenario>
+</story>

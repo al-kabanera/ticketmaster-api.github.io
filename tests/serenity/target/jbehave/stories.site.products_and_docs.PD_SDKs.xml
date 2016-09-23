@@ -1,0 +1,10 @@
+<story path="stories/site/products_and_docs/PD_SDKs.story" title="">
+<meta>
+<property keyword="@" name="debug" value=""/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test engineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test SDK-s Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/products-and-docs/sdks/) Verification for general page&apos;s elements">

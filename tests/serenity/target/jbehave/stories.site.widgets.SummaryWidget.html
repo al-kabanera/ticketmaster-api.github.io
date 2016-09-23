@@ -1,0 +1,47 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/widgets/SummaryWidget.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> test enfineer</div>
+<div class="element asA"><span class="keyword asA">I want to</span> test Ticket Master Developer's site</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I test Summary Widget for Tutorials Widgets Page of Ticket Master Developer's site</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (summary widget) TKMDPA-870 Summary widget check for Getting Started page</h2>
+<div class="step successful">Given open Getting Started page</div>
+<div class="step successful">Then Summary widget is shown for Getting Started page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (summary widget) TKMDPA-870 Summary widget check for Home page</h2>
+<div class="step successful">Given open Home page</div>
+<div class="step failed">Then Summary widget is shown for Home page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: Element should be visible</span></div>
+<pre class="failure">java.lang.AssertionError: Element should be visible
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.failWithMessage(WebElementFacadeImpl.java:710)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.shouldBeVisible(WebElementFacadeImpl.java:365)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
+	at com.sun.proxy.$Proxy21.shouldBeVisible(Unknown Source)
+	at bla.tm.steps.HomePageSteps.checkSummaryWidgetVisible(HomePageSteps.java:58)
+	at bla.tm.steps.HomePageSteps$$EnhancerByCGLIB$$5980547.CGLIB$checkSummaryWidgetVisible$6(&lt;generated&gt;)
+	at bla.tm.steps.HomePageSteps$$EnhancerByCGLIB$$5980547$$FastClassByCGLIB$$7fdc886a.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.HomePageSteps$$EnhancerByCGLIB$$5980547.checkSummaryWidgetVisible(&lt;generated&gt;)
+	at bla.tm.definitions.site.HomePageDefinition.checkSummaryWidgetVisible(HomePageDefinition.java:60)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (summary widget) TKMDPA-870 Summary widget check for API Explorer page</h2>
+<div class="step successful">Given open API Explorer page</div>
+<div class="step successful">Then Summary widget is shown for API Explorer page</div>
+</div>
+</div>

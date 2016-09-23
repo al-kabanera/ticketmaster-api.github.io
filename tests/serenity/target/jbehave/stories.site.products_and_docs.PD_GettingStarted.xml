@@ -1,0 +1,38 @@
+<story path="stories/site/products_and_docs/PD_GettingStarted.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Getting Started Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/products-and-docs/apis/getting-started/) TKMDPA-874 Commerce API links in Available Resources table">
+<step outcome="successful">Given open Commerce API page</step>
+<step outcome="successful">When Commerce API menu has list of methods</step>
+<step outcome="successful">When open Getting Started page</step>
+<step outcome="failed" keyword="FAILED">Then all the Commerce API methods are shown on Getting Started page<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-11e2f506-3461-linux-2&apos;, ip: &apos;172.17.10.21&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b121b274-b55d-4664-b0b7-ccaa3102e0d6</failure></step>
+<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-11e2f506-3461-linux-2&apos;, ip: &apos;172.17.10.21&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b121b274-b55d-4664-b0b7-ccaa3102e0d6
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_GettingStartedSteps$$EnhancerByCGLIB$$7bfeca47.compareCommerceAPIMethodsToSameGettingStartedMethodsList(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_GettingStartedDefinition.compareCommerceAPIMethodsToSameGettingStartedMethodsList(PD_GettingStartedDefinition.java:54)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</failure>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/apis/getting-started/) Verification for general page&apos;s elements">
+<step outcome="successful">Given open Getting Started page</step>
+<step outcome="successful">Then check general page elements for Getting Started Page, where DISQUS = <parameter>true</parameter> and LeftMenu = <parameter>true</parameter></step>
+</scenario>
+</story>
